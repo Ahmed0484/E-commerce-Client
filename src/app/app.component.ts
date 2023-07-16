@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'upload-client';
+  isImageSelectorVisible : boolean = false;
+ 
+  openImageSelector(): void {
+    this.isImageSelectorVisible = true;
+  }
+
+  closeImageSelector() : void {
+    this.isImageSelectorVisible = false;
+  }
 }
